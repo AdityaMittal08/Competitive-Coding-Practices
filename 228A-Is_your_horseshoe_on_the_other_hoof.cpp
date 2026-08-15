@@ -1,0 +1,20 @@
+#include <iostream>
+#include <set>
+
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    set<int> unique_colors;
+    for (int i = 0; i < 4; ++i) {
+        int color;
+        cin >> color;
+        unique_colors.insert(color);
+    }
+
+    cout << 4 - unique_colors.size() << "\n";
+
+    return 0;
+}
